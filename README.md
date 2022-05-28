@@ -66,3 +66,22 @@ $$Q(s,a) = (1 -\alpha ) * Q(s, a) +\alpha *  \left [R(s') + max_{a_i \in A}\left
 ---
 ### Performance Evaluation
 The learning rate ɑ and the discount factor 𝛾 were chosen after a grid search over the following intervals of discrete values, ɑ = [0.1. 0.3, 0.5, 0.7, 0.9] and 𝛾 = [ 0.1. 0.3, 0.5. 0.7, 0.9. 1]. The heat map in was obtained after training the RL model for each combination of parameters (30 combinations in total) over 1500 episodes. The episode ends whenever the bird hits a pipe. The values inside the rectangles, 
+
+---
+# Neuroevolution Applied to Flappy Bird Game
+Neuroevolution (NE) is an unsupervised machine learning approach to ﬁt a neural network model based on genetic optimization  
+Genetic Optimization
+The major nature-inspired natural selection principles encoded into the genetic
+algorithm are:
+
+- Heredity — The process for the Children to inherit the parent’s properties.
+
+- Variation - Varicty of traits must exist in the population.
+
+- Selection — The probability for some of the population members become
+parents and pass down their genetic information (referred also as Survival of
+the ﬁttest).
+
+The basic steps of the NE algorithm applied to ﬁt the NE Flappy Bird player are summarized in Algorithm. We start with a population of N neural network models (represented in the game by their bird avatars) with randomly generated initial properties. In our implementation, the properties that will undergo evolution are the NN weights and the number of hidden layer units. For each element of the population we evaluate its ﬁtness (how well or bad is it in doing a given task) and its relative ﬁtness (how well or bad is it in a given task compared
+to the other elements of the same population). The next step (crossover) is to pick two parents and combine their properties to create a child. The parents are chosen according to their relative fitness, the higher the ﬁtness, the higher the probability of being selected. Based on a predeﬁned mutation probability, the Child’s properties undergo mutation (small Changes in their properties), which deﬁnes the new generation. This iterative process is repeated until we ﬁnd a
+generation (a model) that satisﬁes our demands (e.g. the NE agent reaches a target score). The NE training is illustrated in picture.
