@@ -54,7 +54,7 @@ the following elements:
 In this paper we apply the Q—Learning approach of RL. Based on experience with
 previous games the algorithm creates the Q-table that contains the maximum expected future rewards for each action at each state. The best policy function, i.e. the function that, given a state, returns the action that maximizes the future reward, satisﬁes the Bellman’s equation
 
-$$Q(s,a) = \R(x') + max_{a_i \in A}\left [\gamma  * Q(x', a_i) \right ]$$ 
+$$Q(s,a) = R(x') + max_{a_i \in A}\left [\gamma  * Q(x', a_i) \right ]$$ 
 
 where s is the current state and s’ is the next state after taking action a.
 
