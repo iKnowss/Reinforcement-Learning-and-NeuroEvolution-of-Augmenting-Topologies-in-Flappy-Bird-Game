@@ -188,3 +188,11 @@ ever achieved by a human.
 Because we can readily measure their performance, applying AI approaches to games is a straightforward way to test and compare them. To play the Flappy Bird game, we compare the performance of Reinforcement Learning and Neuroevolution learning setups in this research.
 
 The ability of these algorithms to encapsulate the general game logic, as well as the feature engineering used in this research, is the key to their high scores. e. In contrast to prior research, where deep models had to learn significant characteristics from high-dimensional picture data (game snapshots), here the AI agents' inputs were distance and velocity. Furthermore, the NE agent achieved a surprise high performance by using NNs' strong generalization ability in the game's continuous state space. Despite losing to the NE agent, the RL agent reached a platinum medal level of competitive performance.
+
+
+# Team 
+- Natchanon Wongsasri 6252500208
+- Chakkarin Tumsungnoen 6252500232
+- Korakod Khemkeaw 6252500330
+- Juthathip Panyapunyarat 6252500453
+- Aekpawin Phoomala 6252500500
